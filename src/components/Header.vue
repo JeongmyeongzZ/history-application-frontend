@@ -7,17 +7,17 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
+import { defineComponent } from 'vue';
 
-@Options({
+export default defineComponent({
+  name: 'Header',
   props: {
     title: {
       type: String,
       required: true,
     },
   },
-})
-export default class Header extends Vue {}
+});
 </script>
 
 <style scoped lang="scss">

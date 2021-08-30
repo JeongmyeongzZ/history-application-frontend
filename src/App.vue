@@ -5,15 +5,15 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
+import { defineComponent } from 'vue';
 import GlobalHeader from '@/components/Header.vue';
 
-@Options({
+export default defineComponent({
+  name: 'App',
   components: {
     GlobalHeader,
   },
-})
-export default class App extends Vue {}
+});
 </script>
 
 <style lang="scss">
