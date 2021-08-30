@@ -1,6 +1,9 @@
 <template>
   <article>
-    <img :src="history.imageUrl" :alt="history.date">
+    <img
+      :src="history.imageUrl"
+      :alt="history.date"
+    >
   </article>
 </template>
 
@@ -20,11 +23,12 @@ export default defineComponent({
 
 <style scoped lang="scss">
   article {
-    margin: 6em;
+    margin: calc(4vw + 2em);
     cursor: pointer;
+    width: 220px;
 
     img {
-      width: 150px;
+      width: 100%;
     }
   }
 </style>

@@ -30,6 +30,12 @@ export default defineComponent({
         imageUrl: 'http://tomkellyslack.com/img/content/1/m/lulu_CU.jpg',
         content: 'some contents',
       },
+      {
+        id: 3,
+        date: '2021-07-21',
+        imageUrl: 'http://tomkellyslack.com/img/content/1/m/lulu_CU.jpg',
+        content: 'some contents',
+      },
     ]);
 
     return { histories };
@@ -40,5 +46,7 @@ export default defineComponent({
 <style scoped lang="scss">
   section {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 </style>
