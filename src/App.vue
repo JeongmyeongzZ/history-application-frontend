@@ -1,40 +1,27 @@
 <template>
   <main>
     <global-header title="kurly history" />
+
+    <card-container />
   </main>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import { defineComponent } from 'vue';
 import GlobalHeader from '@/components/Header.vue';
-import History from '@/types/History';
+import CardContainer from '@/components/CardContainer.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
     GlobalHeader,
-  },
-  setup() {
-    const histories = ref<History[]>([
-      {
-        id: 1,
-        date: '2021-07-21',
-        imageUrl: 'http://tomkellyslack.com/img/content/1/m/book_One.jpg',
-        content: 'some contents',
-      },
-      {
-        id: 2,
-        date: '2021-07-21',
-        imageUrl: 'http://tomkellyslack.com/img/content/1/m/lulu_CU.jpg',
-        content: 'some contents',
-      },
-    ]);
-
-    return { histories };
+    CardContainer,
   },
 });
 </script>
 
 <style lang="scss">
-
+  .container {
+    display: flex;
+  }
 </style>
