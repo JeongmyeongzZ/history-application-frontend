@@ -1,5 +1,12 @@
 # history-frontend
 
+## stack
+
+- [imagekit](https://docs.imagekit.io/getting-started/quickstart-guides/vuejs)
+  - [for vue3](https://github.com/guastallaigor/vue-image-kit) 
+  - [lazyload](https://helloinyong.tistory.com/297)
+
+
 ## Project setup
 ```
 npm install
