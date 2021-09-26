@@ -1,5 +1,10 @@
 # history-frontend
 
+## schemes
+- history type
+  - images
+  - work
+
 ## stack
 
 - [imagekit](https://docs.imagekit.io/getting-started/quickstart-guides/vuejs)
